@@ -1,0 +1,21 @@
+ Part 1 - How to Troubleshoot a Slow Running Query in SQL Server
+==================================================================
+ ANS : 
+
+    Typically we will follow below steps :
+	a) Execution Plan
+	b) Locking / Blocking
+	c) Indexes
+	d) IO
+	e) Check Code
+	f) Use tools / Profilers
+	g) Activity Monitor (Resource Usage)
+	h) Performance Counters
+	i) Check Waits
+
+-- Check Wait Stats---
+
+ Select * from sys.dm_os_wait_stats
+
+-- 
+Select * from sys.dm_exec_query_memory_grants
